@@ -2,12 +2,12 @@ local material = require("material")
 
 material.setup({
 	contrast = {
-		sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
+		sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
 		floating_windows = true, -- Enable contrast for floating windows
 		line_numbers = false, -- Enable contrast background for line numbers
 		sign_column = false, -- Enable contrast background for the sign column
 		cursor_line = true, -- Enable darker background for the cursor line
-		non_current_windows = true, -- Enable darker background for non-current windows
+		non_current_windows = false, -- Enable darker background for non-current windows
 		popup_menu = true, -- Enable lighter background for the popup menu
 	},
 
@@ -27,7 +27,7 @@ material.setup({
 
 	high_visibility = {
 		lighter = false, -- Enable higher contrast text for lighter style
-		darker = true -- Enable higher contrast text for darker style
+		darker = false -- Enable higher contrast text for darker style
 	},
 
 	disable = {
@@ -43,3 +43,5 @@ material.setup({
 
 	custom_highlights = {}, -- Overwrite highlights with your own
 })
+
+
