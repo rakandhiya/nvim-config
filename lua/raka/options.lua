@@ -29,6 +29,8 @@ set.wrap = false 		            -- dont wrap lines
 set.scrolloff = 8		            -- how many lines above and below cursorline at start
 set.sidescrolloff = 8		        -- same as above but horizontally
 set.hidden = true               -- set hidden to true so that terminal can run in the background
+set.list = true
+vim.opt.listchars:append("eol:↴")
 
 vim.g.material_style = "darker"
 vim.cmd 'colorscheme material'  -- set active theme

@@ -77,7 +77,7 @@ Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
  - Ketik `gcc` saat normal mode atau visual mode untuk melakukan commenting
 
 ## Todos!
- - [ ] Fix garis-garis vertikal dari start screen
+ - [x] Fix garis-garis vertikal dari start screen
  - [ ] Custom start screen
  - [ ] Support rainbow parentheses
 
