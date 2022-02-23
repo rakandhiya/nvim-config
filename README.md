@@ -1,4 +1,4 @@
-![Demo](https://drive.google.com/file/d/1hxc84v0tCKG3nGyyNEELbcPjxMLlT5K0/view?usp=sharing "Demo of this config")
+![Demo](https://drive.google.com/uc?export=view&id=1hxc84v0tCKG3nGyyNEELbcPjxMLlT5K0 "Demo of this config")
 
 ## About
 Neovim configs, with lua!
