@@ -16,4 +16,4 @@ keymap('n', '<C-o>', ':NvimTreeToggle<CR>', {noremap = true})
 -- keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
 -- Auto write on <ESC>
-keymap('i', '<ESC>', '<ESC>:update<CR>', opts)
+-- keymap('i', '<ESC>', '<ESC>:update<CR>', opts)

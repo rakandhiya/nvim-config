@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use "akinsho/toggleterm.nvim"               -- terminal
   use "lewis6991/gitsigns.nvim"               -- enable git in signcolumn
   use "numToStr/Comment.nvim"                 -- easier comments
+  use "Pocco81/AutoSave.nvim"                 -- autosave
 
   -- LSP stuff
   use "neovim/nvim-lspconfig"                 -- default LSP support
