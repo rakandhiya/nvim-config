@@ -77,9 +77,9 @@ Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
  - Ketik `gcc` saat normal mode atau visual mode untuk melakukan commenting
 
 ## Todos!
- - Fix garis-garis vertikal dari start screen
- - Custom start screen
- - Support rainbow parentheses
+ - [ ] Fix garis-garis vertikal dari start screen
+ - [ ] Custom start screen
+ - [ ] Support rainbow parentheses
 
 ## Notes
 Config ini sudah menginstall LSP dan Syntax Highlighting untuk Rust, Go, C++ dan C
