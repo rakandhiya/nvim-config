@@ -1,4 +1,4 @@
-![Demo](https://drive.google.com/file/d/1ZGiSlU3LrWRKDcabveFVx5MtgX1sUsWf/view?usp=sharing "Demo of this config")
+![Demo](https://drive.google.com/file/d/1hxc84v0tCKG3nGyyNEELbcPjxMLlT5K0/view?usp=sharing "Demo of this config")
 
 ## About
 Neovim configs, with lua!
@@ -83,3 +83,5 @@ Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
 
 ## Notes
 Config ini sudah menginstall LSP dan Syntax Highlighting untuk Rust, Go, C++ dan C
+
+[Video Demo](https://drive.google.com/file/d/1ZGiSlU3LrWRKDcabveFVx5MtgX1sUsWf/view?usp=sharing)
