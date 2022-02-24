@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/nvim-cmp"
 
-  use "onsails/diaglist.nvim"                 -- project diagnostics
+  use "folke/trouble.nvim"                    -- diagnostics manager
 
   -- Snippet support
   use "L3MON4D3/LuaSnip"

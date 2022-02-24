@@ -80,7 +80,7 @@ Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
  - [x] Fix garis-garis vertikal dari start screen
  - [x] Custom start screen
  - [ ] Support rainbow parentheses
- - [ ] Migrate dari diaglist ke trouble.nvim
+ - [x] Migrate dari diaglist ke trouble.nvim
 
 ## Notes
 Config ini sudah menginstall LSP dan Syntax Highlighting untuk Rust, Go, C++ dan C

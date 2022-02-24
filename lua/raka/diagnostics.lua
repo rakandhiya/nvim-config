@@ -1,10 +1,3 @@
-local diaglist = require("diaglist")
-
-diaglist.init({
-  debug = false,
-  debounce_ms = 150,
-})
-
 vim.diagnostic.config({
   virtual_text = true,
   update_in_insert = true,
@@ -20,7 +13,13 @@ vim.diagnostic.config({
   }
 })
 
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+local signs = {
+  Hint = "",
+  Info = "",
+  Warn = "",
+  Error = "",
+}
+
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
@@ -33,5 +32,3 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
   border = "rounded"
 })
-
-

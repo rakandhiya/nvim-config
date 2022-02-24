@@ -13,7 +13,7 @@ material.setup({
 
 	italics = {
 		comments = false, -- Enable italic comments
-		keywords = false, -- Enable italic keywords
+		keywords = true, -- Enable italic keywords
 		functions = false, -- Enable italic functions
 		strings = false, -- Enable italic strings
 		variables = false -- Enable italic variables
@@ -22,12 +22,12 @@ material.setup({
 	contrast_filetypes = { -- Specify which filetypes get the contrasted (darker) background
 		"terminal", -- Darker terminal background
 		"packer", -- Darker packer background
-		"qf" -- Darker qf list background
+    "trouble",
 	},
 
 	high_visibility = {
 		lighter = false, -- Enable higher contrast text for lighter style
-		darker = false -- Enable higher contrast text for darker style
+		darker = true, -- Enable higher contrast text for darker style
 	},
 
 	disable = {
