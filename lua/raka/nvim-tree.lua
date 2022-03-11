@@ -19,8 +19,8 @@ nvim_tree.setup {
     auto_open = true,
   },
   diagnostics = {
-  enable = true,
-  icons = {
+    enable = true,
+    icons = {
       hint = "",
       info = "",
       warning = "",
@@ -49,8 +49,8 @@ nvim_tree.setup {
     width = 30,
     height = 30,
     hide_root_folder = false,
-    side = "right",
-    auto_resize = false,
+    side = "left",
+    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {}
@@ -68,7 +68,7 @@ nvim_tree.setup {
       global = false,
     },
     open_file = {
-      quit_on_open = false,
+      quit_on_open = true,
     }
   }
 }

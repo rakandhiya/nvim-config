@@ -69,6 +69,9 @@ Dokumentasi lengkap [disini](https://github.com/nvim-treesitter/nvim-treesitter)
 ## Keybindings
  - `Ctrl + O` untuk toggle file-explorer
  - `Ctrl + \` untuk toggle terminal 
+ - `Alt + [` BufferLineCyclePrev
+ - `Alt + ]` BufferLineCycleNext
+ - 
 
 Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
 
@@ -79,7 +82,7 @@ Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
 ## Todos!
  - [x] Fix garis-garis vertikal dari start screen
  - [x] Custom start screen
- - [ ] Support rainbow parentheses
+ - [x] Support rainbow parentheses
  - [x] Migrate dari diaglist ke trouble.nvim
 
 ## Notes

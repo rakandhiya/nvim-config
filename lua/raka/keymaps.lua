@@ -1,19 +1,36 @@
 -- variable declarations
 local keymap = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
+local noremap = {noremap = true}
 
--- NvimTree keymaps
-keymap('n', '<C-o>', ':NvimTreeToggle<CR>', {noremap = true})
+-- NvimTree
+keymap('n', '<C-o>', ':NvimTreeToggle<CR>', noremap)
+keymap('n', '<C-r>', ':NvimTreeRefresh<CR>', noremap)
 
--- Split panes movements
--- keymap('n', '<C-h>', '<C-w><C-h>', opts)
--- keymap('n', '<C-j>', '<C-w><C-j>', opts)
--- keymap('n', '<C-k>', '<C-w><C-k>', opts)
--- keymap('n', '<C-l>', '<C-w><C-l>', opts)
--- keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
--- keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
--- keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
--- keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+-- Bufferline movement
+keymap('n', '<A-[>', ':BufferLineCyclePrev<CR>', noremap)
+keymap('n', '<A-]>', ':BufferLineCycleNext<CR>', noremap)
 
--- Auto write on <ESC>
--- keymap('i', '<ESC>', '<ESC>:update<CR>', opts)
+-- Buffer movement
+keymap('n', '<A-h>', '<C-w><C-h>', noremap)
+keymap('n', '<A-j>', '<C-w><C-j>', noremap)
+keymap('n', '<A-k>', '<C-w><C-k>', noremap)
+keymap('n', '<A-l>', '<C-w><C-l>', noremap)
+
+-- Lspsaga related
+keymap('n', '<leader>d', ':Lspsaga show_line_diagnostics<CR>', noremap)
+keymap('n', '<leader>r', ':Lspsaga rename<CR>', noremap)
+keymap('n', '<leader>c', ':Lspsaga code_action<CR>', noremap)
+keymap('v', '<leader>c', ':Lspsaga range_code_action<CR>', noremap)
+keymap('n', '<leader>h', ':Lspsaga hover_doc<CR>', noremap)
+keymap('n', '<leader>p', ':Lspsaga preview_definition<CR>', noremap)
+keymap('n', '<A-n>', ":lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>", noremap)
+keymap('n', '<A-m>', ":lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>", noremap)
+
+-- Telescope
+keymap('n', '<C-t><C-f>', ':Telescope find_files<CR>', noremap)
+keymap('n', '<C-t><C-p>', ':Telescope projects<CR>', noremap)
+keymap('n', '<C-t><C-o>', ':Telescope oldfiles<CR>', noremap)
+
+-- Trouble
+keymap('n', '<C-p>', ':TroubleToggle<CR>', noremap)

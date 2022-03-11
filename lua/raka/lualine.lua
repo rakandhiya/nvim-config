@@ -11,7 +11,22 @@ lualine.setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_b = {'branch', 'diff', 
+      {
+        'diagnostics',
+        sources = {'nvim_diagnostic', 'nvim_lsp'},
+        sections = { 'error', 'warn', 'info', 'hint' },
+        symbols = {
+          hint = " ",
+          info = " ",
+          warn = " ",
+          error = " ",
+        },
+        colored = true,
+        update_in_insert = true,
+        always_visible = true,
+      },
+    },
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},

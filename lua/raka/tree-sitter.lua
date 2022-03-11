@@ -24,4 +24,17 @@ treesitter.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+  rainbow = {
+    enable = true,
+    disable = {"html"},
+    extended_mode = true,
+    max_files_lines = 500,
+  },
+  autotag = {
+    enable = true,
+    filetypes = {
+        'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'svelte', 'vue', 'tsx', 'jsx', 'rescript',
+        'xml', 'php', 'markdown', 'glimmer', 'handlebars', 'hbs', 'blade'
+    }
+  },
 }
