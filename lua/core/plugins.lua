@@ -1,9 +1,11 @@
 -- list of plugins goes here
+
 return require('packer').startup(function(use)
   use "wbthomason/packer.nvim"                -- Have packer manage itself
   use "kyazdani42/nvim-web-devicons"          -- for file icons
   use "kyazdani42/nvim-tree.lua"              -- file tree
-  use "folke/tokyonight.nvim"                 -- tokyo theme
+  use 'folke/tokyonight.nvim'                 -- nightfox theme
+  use 'marko-cerovac/material.nvim'           -- material theme
   use "nvim-lualine/lualine.nvim"             -- status line
   use "lukas-reineke/indent-blankline.nvim"   -- indent blankline
   use "akinsho/bufferline.nvim"               -- bufferline
@@ -23,6 +25,7 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim"               -- enable git in signcolumn
   use "numToStr/Comment.nvim"                 -- easier comments
   use "Pocco81/AutoSave.nvim"                 -- autosave
+  use "simrat39/symbols-outline.nvim"         -- symbols outline support
 
   -- LSP stuff
   use "neovim/nvim-lspconfig"                 -- default LSP support
@@ -43,7 +46,6 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
 
   use "lewis6991/impatient.nvim"              -- for faster startup time
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

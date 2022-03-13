@@ -4,10 +4,14 @@ local nvim_tree_config = require("nvim-tree.config")
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
-  disable_netrw        = false,
+  disable_netrw        = true,
   hijack_netrw         = true,
   open_on_setup        = false,
-  ignore_ft_on_setup   = {},
+  ignore_ft_on_setup   = {
+    'alpha',
+    'dashboard',
+    'startify'
+  },
   auto_close           = false,
   auto_reload_on_write = true,
   open_on_tab          = false,
@@ -68,7 +72,7 @@ nvim_tree.setup {
       global = false,
     },
     open_file = {
-      quit_on_open = true,
+      quit_on_open = false,
     }
   }
 }

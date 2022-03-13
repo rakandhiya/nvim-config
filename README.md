@@ -49,6 +49,7 @@ Note: Kalau bisa install requirements dengan package manager seperti chocolatey,
  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), autocompletion support
  - [diaglist.nvim](https://github.com/onsails/diaglist.nvim), live-update LSP diagnostics
  - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) dan [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip), snippet support
+ - [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim), Outline support
 
 ## Language Support
 Note: tetap harus menginstal binary bahasa pemrogramannya ke komputer dulu, baru install language servernya (Binary harus ada di System Environment Variables atau Path)
@@ -71,7 +72,7 @@ Dokumentasi lengkap [disini](https://github.com/nvim-treesitter/nvim-treesitter)
  - `Ctrl + \` untuk toggle terminal 
  - `Alt + [` BufferLineCyclePrev
  - `Alt + ]` BufferLineCycleNext
- - 
+ - `Ctrl + `
 
 Ingin menambah keybinding? bisa ke file `lua\raka\keymaps.lua`
 

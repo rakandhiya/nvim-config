@@ -56,7 +56,10 @@ bufferline.setup {
         return true
       end
     end,
-    offsets = {{filetype = "NvimTree", text = "File Tree", text_align = "center" }},
+    offsets = {
+        {filetype = "NvimTree", text = "File Tree", text_align = "center" },
+        {filetype = "Outline", text = "Symbols", text_align = "center"}
+    },
     show_buffer_icons = true, -- disable filetype icons for buffers
     show_buffer_close_icons = true,
     show_close_icon = true,
@@ -66,6 +69,6 @@ bufferline.setup {
     -- [focused and unfocused]. eg: { '|', '|' }
     separator_style = "thin",
     enforce_regular_tabs = false,
-    always_show_bufferline = true, 
+    always_show_bufferline = true,
   }
 }
